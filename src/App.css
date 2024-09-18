@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: white;
+  --secondry-color: black;
+  --font-primary-color: black;
+  --font-secondry-color: white;
+  --font-gray: rgb(156, 155, 155);
+}
+[data-theme="dark"] {
+  --primary-color: black;
+  --secondry-color: white;
+  --font-primary-color: white;
+  --font-secondry-color: black;
+  --font-gray: rgb(156, 155, 155);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: poppins;
+  src: url("./assets/font/Poppins-Regular.ttf");
+}
+* {
+  font-family: poppins;
+  padding: 0;
+  margin: 0;
+}
+.fs-xxl {
+  font-size: 2rem;
+}
+.fs-xl {
+  font-size: 1.5rem;
+}
+.fs-l {
+  font-size: 1.25rem;
+}
+.fs-n {
+  font-size: 1rem;
+}
+.fs-s {
+  font-size: 0.75rem;
+}
+.fw-b {
+  font-weight: 700;
+}
+body {
+  padding-top: 7rem;
+}
+.btn-light {
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--font-primary-color);
+  border: 1px solid var(--secondry-color);
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-light:hover {
+  background-color: var(--secondry-color);
+  color: var(--font-secondry-color);
+  border: 1px solid var(--primary-color);
+}
+.btn-dark {
+  outline: none;
+  background-color: var(--secondry-color);
+  color: var(--font-secondry-color);
+  border: 1px solid var(--primary-color);
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-dark:hover {
+  background-color: var(--primary-color);
+  color: var(--font-primary-color);
+  border: 1px solid var(--secondry-color);
 }

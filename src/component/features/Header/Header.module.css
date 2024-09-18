@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 4em;
+  align-items: center;
+  position: relative;
+  background-color: var(--primary-color);
+  z-index: 1;
+  border-bottom: 1px solid var(--font-gray);
+}
+.nav a {
+  margin-left: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav a:hover {
+  color: var(--font-gray);
+  border-bottom: 1px solid var(--font-gray);
+  padding-bottom: 10px;
+}
+.menu-bar {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+  .nav a {
+    margin-left: 0px;
+  }
+
+  .menu-bar {
+    display: block;
+    z-index: 100;
+  }
+  .active {
+    padding: 1em;
+    border: 1px solid var(--secondry-color);
+    background-color: var(--primary-color);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 10px;
+  }
+}
