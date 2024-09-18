@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import classes from "./Header.module.css";
 import { Close, Menu } from "../../../assets/svg/svgComponents";
 
 const Header = () => {
   const [show, setShow] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
+  const scrollTo = useCallback((id) => {
+    const targetElement = document.querySelector(id);
+    targetElement?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    setShow((pre) => !pre);
+  });
   return (
     <div
       style={{
@@ -14,7 +22,15 @@ const Header = () => {
       }}
     >
       <header className={classes.header}>
-        <p className={`fs-xl`}>Balaji Krishnan</p>
+        <p
+          className={`fs-xl`}
+          onClick={() => {
+            scrollTo("#home");
+          }}
+          style={{ cursor: "pointer" }}
+        >
+          Balaji Krishnan
+        </p>
         <p className={classes["menu-bar"]}>
           <span
             onClick={(e) => {
@@ -34,10 +50,38 @@ const Header = () => {
             right: "80px",
           }}
         >
-          <a className={`fs-l`}>About</a>
-          <a className={`fs-l`}>Skills</a>
-          <a className={`fs-l`}>Project</a>
-          <a className={`fs-l`}>Contact</a>
+          <a
+            className={`fs-l`}
+            onClick={() => {
+              scrollTo("#about");
+            }}
+          >
+            About
+          </a>
+          <a
+            className={`fs-l`}
+            onClick={() => {
+              scrollTo("#skills");
+            }}
+          >
+            Skills
+          </a>
+          <a
+            className={`fs-l`}
+            onClick={() => {
+              scrollTo("#projects");
+            }}
+          >
+            Projects
+          </a>
+          <a
+            className={`fs-l`}
+            onClick={() => {
+              scrollTo("#contact");
+            }}
+          >
+            Contact
+          </a>
         </nav>
       </header>
     </div>

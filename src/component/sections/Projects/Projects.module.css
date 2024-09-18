@@ -1,0 +1,20 @@
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 2em;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .project-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-section {
+    grid-template-columns: 1fr;
+  }
+}

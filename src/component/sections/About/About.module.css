@@ -1,0 +1,23 @@
+.about-section {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 2em;
+  padding: 2em;
+  max-width: 1200px;
+  margin-inline: auto;
+  align-items: center;
+}
+.about-img img {
+  width: 400px;
+  border-radius: 20px;
+}
+.about-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  width: 100%;
+}
+.about-content {
+  margin-top: 2em;
+  word-spacing: 5px;
+}

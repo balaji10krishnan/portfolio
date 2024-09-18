@@ -1,0 +1,33 @@
+.contact-section {
+  padding: 2em;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.contact {
+  width: fit-content;
+  border: 1px solid var(--font-gray);
+  border-radius: 20px;
+  padding: 1em 2em;
+  margin-inline: auto;
+  display: flex;
+  gap: 20px;
+}
+.contact a {
+  color: var(--font-primary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact a:hover {
+  color: var(--font-gray) !important;
+}
+
+@media screen and (max-width: 525px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact a {
+    justify-content: center;
+  }
+}

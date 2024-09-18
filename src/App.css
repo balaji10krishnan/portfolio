@@ -4,6 +4,7 @@
   --font-primary-color: black;
   --font-secondry-color: white;
   --font-gray: rgb(156, 155, 155);
+  --bg-gray: #fafafa;
 }
 [data-theme="dark"] {
   --primary-color: black;

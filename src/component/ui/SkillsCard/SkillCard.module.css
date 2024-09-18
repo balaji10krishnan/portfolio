@@ -1,0 +1,33 @@
+.skill-card {
+  align-self: stretch;
+  border: 1px solid var(--font-gray);
+  border-radius: 20px;
+  padding-block: 2em;
+}
+.title {
+  color: var(--font-gray);
+  text-align: center;
+  border-bottom: 1px solid var(--font-gray);
+  padding-bottom: 1em;
+}
+.skills-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em;
+  padding-bottom: 0;
+  gap: 1em;
+}
+.skill {
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (max-width: 450px) {
+  .skills-item {
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+  .skill {
+    justify-content: center;
+  }
+}

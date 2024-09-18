@@ -1,0 +1,15 @@
+.about-card {
+  display: flex;
+  padding: 1.75em;
+  border: 1px solid var(--font-gray);
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  border-radius: 20px;
+}
+.about-card span {
+  margin-bottom: 10px;
+}
+.list {
+  color: var(--font-gray);
+}

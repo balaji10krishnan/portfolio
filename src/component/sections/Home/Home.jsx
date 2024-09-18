@@ -1,7 +1,6 @@
 import classes from "./Home.module.css";
 import profileImg from "../../../assets/img/profile-pic.png";
 import { GitHub, LinkedIn } from "../../../assets/svg/svgComponents";
-import Title from "../../features/Title/Tiltle";
 const Home = () => {
   return (
     <>

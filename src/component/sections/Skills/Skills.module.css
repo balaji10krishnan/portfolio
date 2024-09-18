@@ -1,0 +1,16 @@
+.skill-section {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2em;
+}
+.skill-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-cards {
+    grid-template-columns: 1fr;
+  }
+}
