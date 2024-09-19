@@ -1,9 +1,9 @@
 .about-card {
   display: flex;
-  padding: 1.75em;
+  padding-block: 1.75em;
   border: 1px solid var(--font-gray);
   flex-direction: column;
-  width: 300px;
+  width: 100%;
   align-items: center;
   border-radius: 20px;
 }

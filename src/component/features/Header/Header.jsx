@@ -7,11 +7,14 @@ const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const scrollTo = useCallback((id) => {
     const targetElement = document.querySelector(id);
-    targetElement?.scrollIntoView({
+    const headerOffset = 100; // Adjust this value based on your header's height
+    const elementPosition = targetElement?.getBoundingClientRect().top; // Get element's position relative to the viewport
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
       behavior: "smooth",
-      block: "start",
     });
-    setShow((pre) => !pre);
   });
   return (
     <div
