@@ -1,5 +1,5 @@
 import classes from "./About.module.css";
-import aboutImg from "../../../assets/img/about-pic.png";
+import aboutImg from "../../../assets/img/profile_d_1.jpeg";
 import { Education, Experience } from "../../../assets/svg/svgComponents";
 import Title from "../../ui/Title/Tiltle";
 import AboutCard from "../../ui/AboutCard/AbourCard";
@@ -29,12 +29,13 @@ const About = () => {
             />{" "}
           </div>
           <p className={classes["about-content"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-            reprehenderit et laborum, rem, dolore eum quod voluptate
-            exercitationem nobis, nihil esse debitis maxime facere minus sint
-            delectus velit in eos quo officiis explicabo deleniti dignissimos.
-            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-            reiciendis ea magnam? Nulla, impedit fuga!{" "}
+            I am a front-end developer specializing in building dynamic,
+            responsive web applications using React. With strong skills in
+            HTML5, CSS3, and JavaScript (ES6+), I focus on creating
+            high-performance, user-friendly interfaces. Proficient in React's
+            ecosystem, including React Router, Redux, and hooks, I build
+            scalable and maintainable web applications that deliver seamless
+            user experiences.
           </p>
         </div>
       </section>

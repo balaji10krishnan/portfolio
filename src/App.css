@@ -18,6 +18,10 @@
   font-family: poppins;
   src: url("./assets/font/Poppins-Regular.ttf");
 }
+@font-face {
+  font-family: cabinSketch;
+  src: url("./assets/font/CabinSketch-Regular.ttf");
+}
 * {
   font-family: poppins;
   padding: 0;

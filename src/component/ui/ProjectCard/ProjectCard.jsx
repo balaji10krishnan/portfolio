@@ -2,8 +2,8 @@ import classes from "./ProjectCard.module.css";
 const ProjectCard = ({ title = "title", img, github = "", livedemo = "" }) => {
   return (
     <div className={classes["project-card"]}>
-      <img src={img} />
       <p className={`${classes.title} fw-b`}>{title}</p>
+      <img src={img} />
       <div className={classes.links}>
         {github && (
           <a href={github} target="blank">

@@ -4,7 +4,7 @@ import classes from "./Skills.module.css";
 const Skills = (props) => {
   return (
     <>
-      <Title title2="Explore My" title1={"Experience"} />
+      <Title title2="Explore My" title1={"Skills"} />
       <section className={classes["skill-section"]}>
         <div className={classes["skill-cards"]}>
           <SkillCard

@@ -9,8 +9,8 @@ const Projects = () => {
       <section className={classes["project-section"]}>
         <ProjectCard
           img={img}
-          github="dflskdj"
-          livedemo="ldfjsdl"
+          github="https://github.com/balaji10krishnan/weather"
+          livedemo="https://balaji10krishnan.github.io/weather/"
           title="Sky Scanner"
         />
         <ProjectCard img={img} />

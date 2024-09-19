@@ -23,13 +23,13 @@ const Header = () => {
     >
       <header className={classes.header}>
         <p
-          className={`fs-xl`}
+          className={`${classes.logo} fs-xl`}
           onClick={() => {
             scrollTo("#home");
           }}
           style={{ cursor: "pointer" }}
         >
-          Balaji Krishnan
+          Balaji_K
         </p>
         <p className={classes["menu-bar"]}>
           <span
