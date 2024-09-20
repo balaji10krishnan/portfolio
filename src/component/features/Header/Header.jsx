@@ -6,16 +6,16 @@ const Header = () => {
   const [show, setShow] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const scrollTo = useCallback((id) => {
+    setShow((pre) => !pre);
     const targetElement = document.querySelector(id);
     const headerOffset = 100; // Adjust this value based on your header's height
     const elementPosition = targetElement?.getBoundingClientRect().top; // Get element's position relative to the viewport
     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
     window.scrollTo({
       top: offsetPosition,
       behavior: "smooth",
     });
-  });
+  }, []);
   return (
     <div
       style={{
