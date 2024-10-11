@@ -23,8 +23,8 @@ const Skills = (props) => {
             skills={[
               { skill: "PostgreSQL", level: "Basic" },
               { skill: "MySQL", level: "Basic" },
-              { skill: "Node JS", level: "Basic" },
-              { skill: "Express JS", level: "Basic" },
+              { skill: "Spring Boot", level: "Basic" },
+              { skill: "Java", level: "Basic" },
             ]}
           />
         </div>
