@@ -24,12 +24,6 @@ const Home = () => {
   return (
     <>
       <section className={classes["home-section"]}>
-        <div>
-          <img
-            src={profileImg}
-            style={{ border: "1px solid black", borderRadius: "50%" }}
-          />
-        </div>
         <div className={classes["home-detail"]}>
           <p className={`${classes["greet"]} fs-n fw-b`}>Hello I'm</p>
           <p className={`${classes["name"]} fs-xl fw-b`}> Balaji Krishnan</p>
@@ -63,6 +57,12 @@ const Home = () => {
               <GitHub />
             </a>
           </div>
+        </div>
+        <div>
+          <img
+            src={profileImg}
+            style={{ border: "1px solid black", borderRadius: "50%" }}
+          />
         </div>
       </section>
     </>
